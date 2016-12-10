@@ -78,6 +78,12 @@
 							<td>
 								<button type="button" id="reg_button" class="btn btn-warning">Create an account</button>
 							</td>
+							
+							<!-- SIGN OUT -->
+							<td>
+								<button type="button" id="signout_button" class="btn btn-warning">Sign Out</button>
+							</td>
+							<!-- END OF SIGN OUT -->
 						</tr>
 		  			</table>
 		  			
