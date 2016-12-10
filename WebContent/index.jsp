@@ -12,6 +12,9 @@
 	<!-- BOOTSTRAP -->
 	<link href="resources/css/bootstrap.min.css" rel="stylesheet" />
 	
+	<!-- FIREBASE SCRIPT -->
+	<script src="https://www.gstatic.com/firebasejs/3.6.3/firebase.js"></script>
+	
 </head>
 <body>
 
@@ -29,13 +32,13 @@
 				
 					<form class="navbar-form navbar-right" role="search">
 	                    <div class="form-group">
-	                        <input type="text" class="form-control" name="username" placeholder="Username">
+	                        <input type="text" id="login_email" class="form-control" name="email" placeholder="Email">
 	                    </div>
 	                    <div class="form-group">
-	                        <input type="text" class="form-control" name="password" placeholder="Password">
+	                        <input type="text" id="login_password" class="form-control" name="password" placeholder="Password">
 	                    </div>
 	                    
-	                	<button type="submit" class="btn btn-default navbar-btn">Sign in</button>
+	                	<button type="button" id="login_button" class="btn btn-default navbar-btn">Sign in</button>
 	                </form>
 	    
 				</div><!-- /.container-fluid -->
@@ -60,6 +63,10 @@
 		  				</tr>
 						
 						<tr class="spaceUnder">
+							<td colspan=2><input type="text" class="form-control" id="reg_email" name="reg_email" placeholder="Email" /></td>
+						</tr>
+						
+						<tr class="spaceUnder">
 							<td colspan=2><input type="text" class="form-control" id="reg_username" name="reg_username" placeholder="Username" /></td>
 						</tr>
 							
@@ -69,7 +76,7 @@
 							  			  			
 						<tr class="spaceAbove">
 							<td>
-								<button type="button" class="btn btn-warning">Create an account</button>
+								<button type="button" id="reg_button" class="btn btn-warning">Create an account</button>
 							</td>
 						</tr>
 		  			</table>
@@ -81,5 +88,9 @@
 		<!-- END OF SIGN UP AREA -->
 		
 	</div>
+
+	<!-- CUSTOM JS -->
+	<script src="resources/js/user_auth.js"></script>
+	
 </body>
 </html>
