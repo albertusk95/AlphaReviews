@@ -4,9 +4,11 @@
 <!-- NEWS FEED PAGE -->
 <div class="container_ngview">
 
-	<h1>News Feed</h1>
+	<div class="page_body">
+		<h3><b>Recent Activity</b></h3>
+	</div>
 	
-	<div id="recent_activities">
+	<div id="recent_activities" class="page_body">
 	
 	</div>
 	

@@ -55,12 +55,12 @@
 		                		</div>
 		                	</div>
 		                </form>
-		    
+	
 		                <ul class="nav navbar-nav navbar-right">
 		                    <li class="dropdown">
 		                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Account <span class="caret"></span></a>
 		                        <ul class="dropdown-menu" role="menu">
-		                            <li><a id="#/editprofile">Edit profile</a></li>
+		                            <li><a href="#/editprofile">Edit profile</a></li>
 		                            <li class="divider"></li>
 		                            <li><a id="signout_button">Sign out</a></li>
 		                        </ul>
@@ -111,6 +111,7 @@
 		// Add sign out event
 		btnSignOut.addEventListener("click", function() {
 			console.log("Clicked sign out");
+			localStorage.clear();
 			firebase.auth().signOut();
 		});
 		

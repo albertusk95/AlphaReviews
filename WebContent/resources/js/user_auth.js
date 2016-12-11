@@ -57,7 +57,7 @@
 		});
 
 		dbRefObject.ref("users/" + uid).on("value", function(snap) {
-			console.log("Inserted into the database");
+			console.log("inserted into the database");
 			console.log(snap.val());
 		});
 
@@ -136,6 +136,9 @@
 			
 			// show the authentication's information
 			console.log(firebaseUser);
+			
+			// store the uid in the local storage
+			localStorage.setItem("uid_active", firebaseUser.uid);
 			
 			// redirect to the main page
 			window.location.href = "views/appContainer.jsp";

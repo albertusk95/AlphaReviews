@@ -33,3 +33,10 @@ tr.spaceUnder > td {
 	padding-bottom: 1em;
 	padding-right: 1em;
 }
+
+/* GENERAL STYLE FOR ALL FEATURES */
+.page_body {
+	margin-left: 300px;
+	margin-right: 300px;
+}
+
