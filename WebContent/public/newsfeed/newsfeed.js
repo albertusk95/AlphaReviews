@@ -16,6 +16,7 @@ angular.module('newsfeed', ['ngRoute'])
 	var username;
 	var reviewed_product;
 	var review;
+	var rating;
 	var totalActivities = 0;
 	
 	var query = firebase.database().ref("activities").orderByKey();
@@ -28,6 +29,7 @@ angular.module('newsfeed', ['ngRoute'])
 			username = [];
 			reviewed_product = [];
 			review = [];
+			rating = [];
 			
 			snapshot.forEach(function(childSnapshot) {
 				// key will be the user ID
@@ -41,6 +43,7 @@ angular.module('newsfeed', ['ngRoute'])
 				username.push(childSnapshot.child("username").val());
 				reviewed_product.push(childSnapshot.child("reviewed_product").val());
 				review.push(childSnapshot.child("review").val());
+				rating.push(childSnapshot.child("rating").val());
 			});
 			
 			// assign the length of array to the number of activities
@@ -113,7 +116,7 @@ angular.module('newsfeed', ['ngRoute'])
     	var currentRating = 3;
     	var maxRating = 5;
     	var callback = function(rating) { alert(rating); };
-    	var r = rating(ratingElement, currentRating, maxRating, callback);
+    	var r = rating("newsfeed", ratingElement, currentRating, maxRating, callback);
     }
 
 }]);

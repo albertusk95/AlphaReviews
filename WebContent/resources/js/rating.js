@@ -6,13 +6,14 @@
    * rating
    * 
    * @description The rating component.
+   * @param {String} page_state The state of the current page (newsfeed, write a review, about me, etc)
    * @param {HTMLElement} el The HTMl element to build the rating widget on
    * @param {Number} currentRating The current rating value
    * @param {Number} maxRating The max rating for the widget
    * @param {Function} callback The optional callback to run after set rating
    * @return {Object} Some public methods
    */
-  function rating(el, currentRating, maxRating, callback) {
+  function rating(page_state, el, currentRating, maxRating, callback) {
     
     /**
      * stars
@@ -40,7 +41,10 @@
         if (i < currentRating) { star.classList.add('is-active'); }
         el.appendChild(star);
         stars.push(star);
-        attachStarEvents(star);
+        
+        if (page_state != "newsfeed") { 
+        	attachStarEvents(star);
+        }
       }
     })();
 

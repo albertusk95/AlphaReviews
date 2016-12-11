@@ -60,7 +60,7 @@
 		                    <li class="dropdown">
 		                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Account <span class="caret"></span></a>
 		                        <ul class="dropdown-menu" role="menu">
-		                            <li><a href="#">Edit profile</a></li>
+		                            <li><a id="#/editprofile">Edit profile</a></li>
 		                            <li class="divider"></li>
 		                            <li><a id="signout_button">Sign out</a></li>
 		                        </ul>
@@ -109,7 +109,7 @@
 		const btnSignOut = document.getElementById("signout_button");
 		
 		// Add sign out event
-		btnSignOut.addEventListener("click", function(){
+		btnSignOut.addEventListener("click", function() {
 			console.log("Clicked sign out");
 			firebase.auth().signOut();
 		});
@@ -124,6 +124,7 @@
 	<script src="../public/newsfeed/newsfeed.js"></script>
 	<script src="../public/aboutme/aboutme.js"></script>
 	<script src="../public/writeareview/writeareview.js"></script>
+	<script src="../public/editprofile/editprofile.js"></script>
 	
 </body>
 </html>

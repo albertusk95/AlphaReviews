@@ -3,7 +3,8 @@ var app = angular.module('alphareviews', [
     'ngRoute',
     'newsfeed',
     'aboutme',
-    'writeareview'
+    'writeareview',
+    'editprofile'
 ])
 
 .config(['$routeProvider', function($routeProvider) {
