@@ -9,6 +9,9 @@
 	<!-- CUSTOM CSS -->
 	<link href="../resources/css/custom.css" rel="stylesheet" />
 	
+	<!-- RATING CSS -->
+	<link href="../resources/css/rating.css" rel="stylesheet" />
+	
 	<!-- BOOTSTRAP -->
 	<script src="../resources/js/jquery.js"></script>
 	<script src="../resources/js/bootstrap.min.js"></script>
@@ -70,7 +73,7 @@
    					<!-- App's menu -->
    					<div class="collapse navbar-collapse">
 						<div class="nav navbar-nav" role="search">
-							<table border=0>
+							<table border=0 class="alphareviews_navigation">
 	    					
 	    						<tr>
 	    							<td align="right" style="padding-right: 70px">
@@ -111,16 +114,10 @@
 			firebase.auth().signOut();
 		});
 		
-		/*
-		const dbRefObject = firebase.database();
-	
-		dbRefObject.ref("users").on("value", function(snap) {
-			console.log("Reading from the database");
-			console.log(snap.val());
-		});
-		*/
-		
 	</script>
+	
+	<!-- RATING JS -->
+	<script src="../resources/js/rating.js"></script>
 	
 	<!-- APP JS -->
 	<script src="../public/app.js"></script>

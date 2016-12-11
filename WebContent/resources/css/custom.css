@@ -7,6 +7,10 @@
     text-align: center;
 }
 
+.container_ngview {
+	margin-top: 200px;
+}
+
 #signup_area {
 	padding-top: 150px;
 }

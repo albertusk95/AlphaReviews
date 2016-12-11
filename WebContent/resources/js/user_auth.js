@@ -50,17 +50,17 @@
 		
 		dbRefObject.ref("users/" + uid).set({
 			email: txtEmailSignUp.value,
-		    username: txtUsernameSignUp.value,
+			username: txtUsernameSignUp.value,
 			firstName: txtFirstNameSignUp.value,
 		    lastName: txtLastNameSignUp.value,
 		    totalReviews: 0
 		});
 
-		dbRefObject.ref("users/" + uid + "/email").on("value", function(snap) {
+		dbRefObject.ref("users/" + uid).on("value", function(snap) {
 			console.log("Inserted into the database");
 			console.log(snap.val());
 		});
-		
+
 	}
 	
 	// Add login event

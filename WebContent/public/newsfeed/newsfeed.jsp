@@ -1,10 +1,13 @@
 
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 
-<!-- VERTICAL NAVBAR -->	
+<!-- NEWS FEED PAGE -->
+<div class="container_ngview">
 
-<div style="margin-top:200px">
+	<h1>News Feed</h1>
 	
-	<h1>News Feed</h1>	
-
+	<div id="recent_activities">
+	
+	</div>
+	
 </div>
