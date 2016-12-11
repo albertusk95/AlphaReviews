@@ -78,12 +78,6 @@
 							<td>
 								<button type="button" id="reg_button" class="btn btn-warning">Create an account</button>
 							</td>
-							
-							<!-- SIGN OUT -->
-							<td>
-								<button type="button" id="signout_button" class="btn btn-warning">Sign Out</button>
-							</td>
-							<!-- END OF SIGN OUT -->
 						</tr>
 		  			</table>
 		  			
@@ -95,6 +89,9 @@
 		
 	</div>
 
+	<!-- FIREBASE INIT -->
+	<script src="resources/js/firebase_init.js"></script>
+	
 	<!-- CUSTOM JS -->
 	<script src="resources/js/user_auth.js"></script>
 	
