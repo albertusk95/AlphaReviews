@@ -12,6 +12,9 @@
 	<!-- RATING CSS -->
 	<link href="../resources/css/rating.css" rel="stylesheet" />
 	
+	<!-- PROFILE PAGE CSS -->
+	<link href="../resources/css/profile_page.css" rel="stylesheet" />
+	
 	<!-- BOOTSTRAP -->
 	<script src="../resources/js/jquery.js"></script>
 	<script src="../resources/js/bootstrap.min.js"></script>
@@ -29,7 +32,7 @@
 
 	<!-- TOP NAVBAR FOR SEARCH BAR -->
 	<div id="top-navbar">
-		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<nav class="navbar navbar-default" role="navigation">
 			<div class="container-fluid">
 			  		
 			  		<!-- Project's title -->
